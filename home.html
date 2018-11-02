@@ -39,13 +39,19 @@
             </div>
             <div id="navbar" class="navbar row-fluid">
                 <div class="col-2 offset-1 buttonCol">
-                    <button id="res_form" class="button"> Get a Reservation </button>
+                    <a href="/add">
+                        <button id="res_form" class="button"> Get a Reservation </button>
+                    </a>
                 </div>
                 <div class="col-2 offset-2 buttonCol">
-                    <button id="res_views" class="button"> View Reservations</button>
+                    <a href="/all">
+                        <button id="res_views" class="button"> View Reservations</button>
+                    </a>
                 </div>
                 <div class="col-2 offset-2 buttonCol">
-                    <button id="go_home" class="button"> Home </button>
+                    <a href="/">
+                        <button id="go_home" class="button"> Home </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -57,6 +63,10 @@
         <!-- End of API Reference Links Div -->
 
         </div>
+
+        <!-- Beginning of MY.js External JavaScript -->
+            <script src="server.js"></script>
+        <!-- End of MY.js External JavaScript -->
     </body>
 <!-- End of Body -->
 </html>
