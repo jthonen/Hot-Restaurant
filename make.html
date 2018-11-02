@@ -67,6 +67,27 @@
                 </div>
             </form>
         </div>
+        <!-- Beginning of Internal Reservation Page JavaScript/jQuery -->
+        <script>
+            function Reservation_Request(guest_name, guest_phone, number_of_guests, reservation_time)  {
+                this.guest_name = guest_name;
+                this.guest_phone = guest_phone;
+                this.number_of_guests = number_of_guests;
+                this.reservation_time = reservation_time;
+            };
+            
+            var submit_reservation = $("button.submit");
+            submit_reservation.on("click", function(event)    {
+                event.preventDefault();
+                var guest_name = $("input#name").val();
+                var guest_phone = $("input#phone").val();
+                var number_of_guests = $("input#guests").val();
+                var reservation_time = $("input#time").val();
+                var new_reservation_request = new Reservation_Request(guest_name, guest_phone, number_of_guests, reservation_time);
+                console.log(new_reservation_request);
+            });
+        </script>
+        <!-- End of Internal Reservation Page JavaScript/jQuery -->
     </body>
 <!-- End of Body -->
 </html>

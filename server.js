@@ -29,11 +29,11 @@ app.get("/", function(req, res) {
 });
 
 app.get("/add", function(req, res) {
-  res.sendFile(path.join(__dirname, "reserve.html"));
+  res.sendFile(path.join(__dirname, "make.html"));
 });
 
 app.get("/all", function(req, res) {
-  res.sendFile(path.join(__dirname, "tables.html"));
+  res.sendFile(path.join(__dirname, "view.html"));
 });
 
 // Displays all characters
