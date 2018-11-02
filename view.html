@@ -17,8 +17,51 @@
 <!-- End of Head -->
 <!-- Beginning of Body -->
     <body>
+    
+    <!-- Beginning of Internal CSS Styling -->
+        <style>
+            #table_row  {
+                justify-content: center;
+            }
+            table   {
+                width: 90%;
+                border: solid black 3px;
+                text-align: center;
+            }
+            tr  {
+                border: solid black 1px;
+            }
+            td  {
+                border: solid black 1px;
+            }
+            th  {
+                border: solid black 1px;
+            }
+        </style>
+    <!-- End of Internal CSS Styling -->
         <div class="container-fluid">
-
+            <div id="hero_div" class="jumbotron row-fluid">
+                <div id="titleDiv" class="row-fluid">
+                    <h1 id="title"> View existing reservations below: </h1>
+                </div>
+            </div>
+            <div id="table_row" class="row">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                Reservation Times
+                            </th>
+                            <th scope="col"> Number of Guests</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> 12:00 P.M. </td>
+                            <td> 4 </td>
+                        </tr>
+                    </tbody>
+            </table>
         </div>
     </body>
 <!-- End of Body -->
