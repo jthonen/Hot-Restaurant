@@ -16,9 +16,48 @@
     </head>
 <!-- End of Head -->
 <!-- Beginning of Body -->
+    <style>
+        form    {
+            border: solid black 5px;
+            padding-top: 25px;
+            height: 150px;
+        }
+        button  {
+            margin-top: 10px;
+            margin-left: 77.25%;
+            width: 180px;
+            background-color: royalblue;
+            color: whitesmoke;
+        }
+    </style>
     <body>
         <div class="container-fluid">
-
+            <div id="hero_div" class="jumbotron row-fluid">
+                <div id="titleDiv" class="row-fluid">
+                    <h1 id="title"> Make a reservation below: </h1>
+                </div>
+            </div>
+            <form id="reservation_form" class="form row-fluid">
+                <label for="name" class="col-2">
+                    Full Name:
+                    <input id="name">
+                </label>
+                <label for="phone" class="col-2 offset-1">
+                    Phone Number:
+                    <input id="phone">
+                </label>
+                <label for="guests" class="col-2 offset-1">
+                    Number of Guests:
+                    <input id="guests">
+                </label>
+                <label for="time" class="col-2 offset-1">
+                    Reservation Time:
+                    <input id="time">
+                </label>
+                <div class="row-fluid">
+                    <button class="submit"> Submit Reservation </button>
+                </div>
+            </form>
         </div>
     </body>
 <!-- End of Body -->
