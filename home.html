@@ -1,35 +1,61 @@
 <!DOCTYPE html>
 <html>
+
 <!-- Beginning of Head -->
     <head>
+
     <!-- Beginning of Meta -->
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="MY.js">
     <!-- End of Meta -->
+
     <!-- Beginning of External CSS / Bootstrap CDN -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- End of External CSS / Bootstrap CDN -->
+
     <!-- Beginning of jQuery CDN Script -->
         <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <!-- End of jQuery CDN Script -->
+
     </head>
 <!-- End of Head -->
+
 <!-- Beginning of Body -->
     <body>
+        <!-- Beginning of Internal CSS Styling -->
+            <style>
+                #titleDiv   {
+                    text-align: center;
+                }
+            </style>
+        <!-- End of Internal CSS Styling -->
         <div class="container-fluid">
-            <!-- Beginning of Hero/Jumbotron Div -->
-	<div id="hero_div" class="jumbotron">
-            <div id="titleDiv class="row">
-                <h1> Welcome to Hot Restaurant </h1>
+
+        <!-- Beginning of Hero/Jumbotron Div -->
+        <div id="hero_div" class="jumbotron row-fluid">
+            <div id="titleDiv" class="row-fluid">
+                <h1 id="title"> Welcome to Hot Restaurant </h1>
+            </div>
+            <div id="navbar" class="navbar row-fluid">
+                <div class="col-2 offset-1 buttonCol">
+                    <button id="res_form" class="button"> Get a Reservation </button>
+                </div>
+                <div class="col-2 offset-2 buttonCol">
+                    <button id="res_views" class="button"> View Reservations</button>
+                </div>
+                <div class="col-2 offset-2 buttonCol">
+                    <button id="go_home" class="button"> Home </button>
+                </div>
             </div>
         </div>
-    <!-- End of Hero/Jumbotron Div -->
-    
-    <!-- Beginning of API Reference Links Div -->
+        <!-- End of Hero/Jumbotron Div -->
+
+        <!-- Beginning of API Reference Links Div -->
         <div id="API_div" class="row">
         </div>
-    <!-- End of API Reference Links Div -->
+        <!-- End of API Reference Links Div -->
+
         </div>
     </body>
 <!-- End of Body -->
